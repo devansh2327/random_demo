@@ -6,38 +6,59 @@
     <title>Document</title>
 </head>
 <body>
-<!-- Example content inspired by a typical college website homepage layout -->
-<header>
-    <h1>KIET Group of Institutions</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Departments</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<header style="background: linear-gradient(90deg, #4e54c8, #8f94fb); color: white; padding: 2rem 0; text-align: center;">
+    <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">Explore the World</h1>
+    <p style="font-size: 1.5rem;">Your Ultimate Tourism Guide</p>
 </header>
-<main>
-    <section>
-        <h2>Welcome to KIET</h2>
-        <p>
-            KIET Group of Institutions is a premier educational institution offering quality education in engineering, management, and pharmacy.
-        </p>
-        <a href="#" style="display:inline-block;padding:10px 20px;background:#007bff;color:#fff;text-decoration:none;border-radius:4px;">Apply Now</a>
+<main style="max-width: 1000px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 16px; box-shadow: 0 8px 32px rgba(78,84,200,0.15);">
+    <section style="margin-bottom: 2rem;">
+        <h2 style="color: #4e54c8;">Top Destinations</h2>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Paris" style="width:100%; height:180px; object-fit:cover;">
+                <div style="padding: 1rem;">
+                    <h3 style="margin:0 0 0.5rem 0;">Paris</h3>
+                    <p style="margin:0;">The city of lights, romance, and art. Visit the Eiffel Tower, Louvre, and charming cafes.</p>
+                </div>
+            </div>
+            <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                <img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80" alt="Tokyo" style="width:100%; height:180px; object-fit:cover;">
+                <div style="padding: 1rem;">
+                    <h3 style="margin:0 0 0.5rem 0;">Tokyo</h3>
+                    <p style="margin:0;">A vibrant blend of tradition and technology. Explore temples, neon streets, and sushi bars.</p>
+                </div>
+            </div>
+            <div style="flex: 1 1 250px; background: #f5f7fa; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Maldives" style="width:100%; height:180px; object-fit:cover;">
+                <div style="padding: 1rem;">
+                    <h3 style="margin:0 0 0.5rem 0;">Maldives</h3>
+                    <p style="margin:0;">Crystal clear waters, white sand beaches, and luxury resorts. Perfect for relaxation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="margin-bottom: 2rem;">
+        <h2 style="color: #4e54c8;">Travel Tips</h2>
+        <ul style="font-size: 1.1rem; line-height: 1.7;">
+            <li>Plan ahead and book accommodations early.</li>
+            <li>Learn basic phrases of the local language.</li>
+            <li>Respect local customs and traditions.</li>
+            <li>Keep digital and physical copies of important documents.</li>
+            <li>Try local cuisine and explore off-the-beaten-path spots.</li>
+        </ul>
     </section>
     <section>
-        <h3>Latest News</h3>
-        <ul>
-            <li>Admissions open for 2024-25 batch.</li>
-            <li>Upcoming seminar on Artificial Intelligence.</li>
-            <li>Campus recruitment drive by top companies.</li>
-        </ul>
+        <h2 style="color: #4e54c8;">Contact Us</h2>
+        <form style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px;">
+            <input type="text" placeholder="Your Name" required style="padding: 0.7rem; border-radius: 6px; border: 1px solid #ccc;">
+            <input type="email" placeholder="Your Email" required style="padding: 0.7rem; border-radius: 6px; border: 1px solid #ccc;">
+            <textarea placeholder="Your Message" required style="padding: 0.7rem; border-radius: 6px; border: 1px solid #ccc; min-height: 80px;"></textarea>
+            <button type="submit" style="background: linear-gradient(90deg, #4e54c8, #8f94fb); color: white; border: none; padding: 0.8rem; border-radius: 6px; font-size: 1rem; cursor: pointer;">Send Message</button>
+        </form>
     </section>
 </main>
-<footer>
-    <p>&copy; 2024 KIET Group of Institutions. All rights reserved.</p>
+<footer style="text-align: center; padding: 1rem 0; background: #f5f7fa; color: #4e54c8; border-top: 1px solid #e0e0e0;">
+    &copy; <%= new Date().getFullYear() %> Explore the World. All rights reserved.
 </footer>
 </body>
 </html>
