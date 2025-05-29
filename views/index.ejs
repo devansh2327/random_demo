@@ -6,8 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>welcome to my page</h1>
-    <p>This page is rendered using EJS and served by Express.</p>
-    
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);">
+        <form style="background: #fff; padding: 2rem 2.5rem; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.12); min-width: 320px;">
+            <h2 style="text-align: center; margin-bottom: 1.5rem; color: #333;">Login</h2>
+            <div style="margin-bottom: 1rem;">
+                <label for="username" style="display: block; margin-bottom: 0.5rem; color: #555;">Username</label>
+                <input type="text" id="username" name="username" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px;">
+            </div>
+            <div style="margin-bottom: 1.5rem;">
+                <label for="password" style="display: block; margin-bottom: 0.5rem; color: #555;">Password</label>
+                <input type="password" id="password" name="password" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px;">
+            </div>
+            <button type="submit" style="width: 100%; padding: 0.7rem; background: #74ebd5; color: #222; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: background 0.2s;">
+                Login
+            </button>
+        </form>
+    </div>
 </body>
 </html>
